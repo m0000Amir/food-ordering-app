@@ -1,4 +1,4 @@
-import { button } from "./elements/Button";
+import { Button } from "./elements/Button";
 
 export const Banner = () => {
   return (
@@ -11,7 +11,7 @@ export const Banner = () => {
             Get start today!
           </p>
           <div className="btn-container">
-            <button>Order Now</button>
+            <Button>Order Now</Button>
             <a href="/menu" className="text-yellow-400 hover:text-yellow-500 font-bold text-decoration-line px-3">
               See Menu
             </a>

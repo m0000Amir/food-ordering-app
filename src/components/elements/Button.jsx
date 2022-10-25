@@ -8,18 +8,18 @@ function getClassName({ className }) {
 }
 
 const sizes = {
-  small: 'px4- py-3',
+  small: 'px-4 py-3',
   medium: 'px-6 py-4',
   large: 'w-full px-4 py-3',
 };
 
 const variants = {
-  primary: 'bg-marigold focus:ring-marigpld',
+  primary: 'bg-marigold focus:ring-marigold',
   secondary: 'bg-tomato focus:ring-tomato',
   dark: 'bg-black focus:ring-white',
 } 
 
-export const button = ({ 
+export const Button = ({ 
   children, 
   className, 
   size = 'small', 
