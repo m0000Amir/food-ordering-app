@@ -4,7 +4,7 @@ import AddProduct from './AddProduct'
 export default function ProductPreviewCard({ product, onAddProduct }) {
 
   const addProduct = () => {
-    // todo: create after settingn redux state for cart to add product there
+    onAddProduct(product);
   }
 
   return (
@@ -12,7 +12,7 @@ export default function ProductPreviewCard({ product, onAddProduct }) {
       <img src={product.imageUrl} alt={product.name} />
       <h2 className='pb-2 text-lg'>{ product.name }</h2>
       <p className='mb-2 h-20 line-clamp-4'>{ product.desciption }</p>
-      <AddProduct onAddProduct={onAddProduct} />
+      <AddProduct onAddProduct={addProduct} />
     </div>
   )
 }
